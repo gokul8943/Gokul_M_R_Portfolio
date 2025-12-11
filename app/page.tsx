@@ -1,11 +1,21 @@
-import Image from "next/image";
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import Services from '@/components/Services';
+import Projects from '@/components/Projects';
+import TechStack from '@/components/TechStack';
+import Testimonials from '@/components/Testimonials';
+import Contact from '@/components/Contact';
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      
-       <h1 className="bg-red-500">Coming Soon</h1>
-       <h6 className="bg-amber-900">Gokul M R </h6>
-    </div>
+    <main className="relative z-0">
+      <Hero />
+      <About />
+      <TechStack />
+      <Services />
+      <Projects />
+      <Testimonials />
+      <Contact />
+    </main>
   );
 }
