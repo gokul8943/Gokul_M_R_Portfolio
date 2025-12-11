@@ -6,24 +6,24 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 export default function Projects() {
     const projects = [
         {
-            title: "E-Commerce Dashboard",
+            title: "Ai interview platform",
             desc: "A comprehensive dashboard for managing online stores, orders, and analytics.",
-            tags: ["Next.js", "TypeScript", "Tailwind", "Prisma"],
+            tags: ["React.js","Node.js","Express.js", "TypeScript", "Tailwind", "Prisma"],
             github: "#",
             demo: "#",
             // placeholder color instead of real image for now
             color: "from-blue-500 to-cyan-500"
         },
         {
-            title: "Social Media App",
+            title: "Ai image generation",
             desc: "Real-time social platform with chat, notifications, and post sharing features.",
-            tags: ["React", "Node.js", "Socket.io", "MongoDB"],
+            tags: ["React.js", "Node.js", "Socket.io", "MongoDB"],
             github: "#",
             demo: "#",
             color: "from-purple-500 to-pink-500"
         },
         {
-            title: "Task Management Tool",
+            title: "Real estate platform",
             desc: "Collaborative project management tool with Kanban boards and team chat.",
             tags: ["Vue.js", "Firebase", "Pinia"],
             github: "#",

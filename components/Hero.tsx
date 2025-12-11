@@ -32,7 +32,7 @@ export default function Hero() {
                         <span className="text-gradient">experiences</span> that matter.
                     </h1>
 
-                    <p className="text-gray-400 text-lg md:text-xl max-w-lg">
+                    <p className="text-gray-400 text-lg md:text-xl max-w-lg shadow-lg">
                         I&apos;m a self-taught developer specializing in building exceptional digital experiences.
                         Currently focused on building accessible, human-centered products.
                     </p>
