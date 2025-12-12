@@ -50,18 +50,6 @@ export default function Navbar() {
                         </a>
                     </li>
                     <li className="flex items-center gap-4">
-                        <a href="https://github.com/gokul-m-r" target="_blank" rel="noopener noreferrer" className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors">
-                            <FaGithub size={20} />
-                        </a>
-                        <a href="https://linkedin.com/in/gokul-m-r" target="_blank" rel="noopener noreferrer" className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors">
-                            <FaLinkedin size={20} />
-                        </a>
-                        <a href="https://twitter.com/gokul_m_r" target="_blank" rel="noopener noreferrer" className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors">
-                            <FaTwitter size={20} />
-                        </a>
-                        <a href="mailto:gokul.m.r.dev@gmail.com" className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors">
-                            <SiGmail size={20} />
-                        </a>
                         <ThemeToggle />
                     </li>
                 </ul>
