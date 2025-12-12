@@ -30,13 +30,13 @@ export default function About() {
                         className="relative"
                     >
                         <div className="relative z-10 glass-card p-8 rounded-2xl">
-                            <h3 className="text-2xl font-bold mb-4">My Journey</h3>
-                            <p className="text-gray-400 mb-6 leading-relaxed">
+                            <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">My Journey</h3>
+                            <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
                                 I started my coding journey with a simple curiosity about how things work on the internet.
                                 What began as a hobby quickly turned into a passion for building robust, scalable applications.
                                 As a self-taught developer, I&apos;ve spent countless hours mastering the MERN stack and exploring new technologies.
                             </p>
-                            <p className="text-gray-400 leading-relaxed">
+                            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                                 Today, I build full-stack applications that are not just functional but also visually stunning.
                                 I believe in writing clean, maintainable code and delivering exceptional user experiences.
                             </p>
@@ -52,10 +52,10 @@ export default function About() {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: idx * 0.1 }}
-                                className="p-6 rounded-xl bg-white/5 border border-white/5 hover:border-primary/50 transition-colors"
+                                className="p-6 rounded-xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/5 hover:border-primary/50 transition-colors"
                             >
-                                <h4 className="text-xl font-bold mb-2 text-white">{feature.title}</h4>
-                                <p className="text-gray-400">{feature.desc}</p>
+                                <h4 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">{feature.title}</h4>
+                                <p className="text-gray-600 dark:text-gray-400">{feature.desc}</p>
                             </motion.div>
                         ))}
                     </div>

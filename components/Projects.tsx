@@ -8,7 +8,7 @@ export default function Projects() {
         {
             title: "Ai interview platform",
             desc: "A comprehensive dashboard for managing online stores, orders, and analytics.",
-            tags: ["React.js","Node.js","Express.js", "TypeScript", "Tailwind", "Prisma"],
+            tags: ["React.js", "Node.js", "Express.js", "TypeScript", "Tailwind", "Prisma"],
             github: "#",
             demo: "#",
             // placeholder color instead of real image for now
@@ -53,25 +53,25 @@ export default function Projects() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.1 }}
-                            className="group rounded-2xl bg-white/5 border border-white/10 overflow-hidden hover:border-primary/50 transition-all"
+                            className="group rounded-2xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 overflow-hidden hover:border-primary/50 transition-all"
                         >
                             {/* Image Placeholder */}
                             <div className={`h-48 w-full bg-gradient-to-br ${project.color} opacity-80 group-hover:scale-105 transition-transform duration-500`} />
 
                             <div className="p-6">
-                                <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">{project.title}</h3>
-                                <p className="text-gray-400 mb-4 line-clamp-3">{project.desc}</p>
+                                <h3 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white group-hover:text-primary transition-colors">{project.title}</h3>
+                                <p className="text-gray-600 dark:text-gray-400 mb-4 line-clamp-3">{project.desc}</p>
 
                                 <div className="flex flex-wrap gap-2 mb-6">
                                     {project.tags.map((tag, tagIdx) => (
-                                        <span key={tagIdx} className="px-3 py-1 text-xs rounded-full bg-white/5 text-gray-300 border border-white/10">
+                                        <span key={tagIdx} className="px-3 py-1 text-xs rounded-full bg-black/5 dark:bg-white/5 text-gray-700 dark:text-gray-300 border border-black/10 dark:border-white/10">
                                             {tag}
                                         </span>
                                     ))}
                                 </div>
 
                                 <div className="flex gap-4">
-                                    <a href={project.github} className="flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-white transition-colors">
+                                    <a href={project.github} className="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
                                         <FaGithub /> Code
                                     </a>
                                     <a href={project.demo} className="flex items-center gap-2 text-sm font-medium text-primary hover:text-accent transition-colors">

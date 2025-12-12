@@ -28,7 +28,7 @@ export default function Services() {
     ];
 
     return (
-        <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-black/20">
+        <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-black/5 dark:bg-black/20">
             <div className="max-w-7xl mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -49,13 +49,13 @@ export default function Services() {
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.1 }}
                             whileHover={{ y: -10 }}
-                            className="p-8 rounded-2xl glass-card group hover:bg-white/5 transition-all"
+                            className="p-8 rounded-2xl glass-card group hover:bg-black/5 dark:hover:bg-white/5 transition-all"
                         >
                             <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center text-2xl text-white mb-6 group-hover:scale-110 transition-transform">
                                 {service.icon}
                             </div>
-                            <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                            <p className="text-gray-400 text-sm leading-relaxed">
+                            <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">{service.title}</h3>
+                            <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                                 {service.desc}
                             </p>
                         </motion.div>
