@@ -34,12 +34,12 @@ export default function Navbar() {
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-                <a href="#" className="text-2xl font-bold font-mono text-gradient">Gokul M R</a>
+                <a href="/" className="text-2xl font-bold font-mono text-gradient">Gokul M R</a>
 
                 <ul className="hidden md:flex items-center gap-8">
                     {links.map((link) => (
                         <li key={link.name}>
-                            <a href={link.href} className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors hover:underline decoration-primary decoration-2 underline-offset-4">
+                            <a href={link.href} className="text-sm font-medium text-gray-700 dark:text-gray-800 hover:text-primary dark:hover:text-white transition-colors hover:underline decoration-primary decoration-2 underline-offset-4">
                                 {link.name}
                             </a>
                         </li>

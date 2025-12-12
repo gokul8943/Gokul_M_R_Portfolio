@@ -44,7 +44,7 @@ export default function TechStack() {
     if (!isMounted) return null;
 
     return (
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black/5 dark:bg-black/20 overflow-hidden relative min-h-[700px]">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 overflow-hidden relative min-h-[700px]">
             {/* Background Header Layer */}
             <div className="absolute top-10 left-0 right-0 z-10 text-center pointer-events-none">
                 <motion.div
@@ -91,7 +91,7 @@ export default function TechStack() {
                                 opacity: 1,
                             }}
                             transition={{
-                                duration: 15 + Math.random() * 15, // 15-30s duration for slow float
+                                duration: 15 + Math.random() * 30, // 15-30s duration for slow float
                                 repeat: Infinity,
                                 repeatType: "mirror",
                                 ease: "linear",
@@ -104,7 +104,7 @@ export default function TechStack() {
                                 whileHover={{ scale: 1.2, zIndex: 50 }}
                                 className="relative group cursor-pointer"
                             >
-                                <div className="w-24 h-24 rounded-full glass-card flex items-center justify-center text-4xl text-gray-600 dark:text-gray-400 group-hover:text-primary dark:group-hover:text-white group-hover:border-primary/50 group-hover:shadow-[0_0_30px_rgba(70,239,188,0.3)] transition-all duration-300 bg-white/10 dark:bg-black/20 backdrop-blur-xl">
+                                <div className="w-24 h-24 rounded-full glass-card flex items-center justify-center text-4xl text-gray-800 dark:text-gray-400 group-hover:text-primary dark:group-hover:text-black group-hover:border-primary/50 group-hover:shadow-[0_0_30px_rgba(70,239,188,0.3)] transition-all duration-300 bg-white/10 dark:bg-black/20 backdrop-blur-xl">
                                     {tech.icon}
                                 </div>
                                 <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50 bg-black/80 px-2 py-1 rounded text-xs text-white pointer-events-none">
