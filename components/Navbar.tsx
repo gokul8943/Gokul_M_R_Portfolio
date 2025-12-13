@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from "react";
 import { ThemeToggle } from "./ThemeToggle";
+import Link from 'next/link';
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -32,14 +33,14 @@ export default function Navbar() {
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-                <a href="/" className="text-2xl font-bold font-mono text-gradient">Gokul M R</a>
+                <Link href="/" className="text-2xl font-bold font-mono text-gradient">Gokul M R</Link>
 
                 <ul className="hidden md:flex items-center gap-8">
                     {links.map((link) => (
                         <li key={link.name}>
-                            <a href={link.href} className="text-sm font-medium text-primary dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors hover:underline decoration-primary decoration-2 underline-offset-4">
+                            <Link href={link.href} className="text-sm font-medium text-primary dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors hover:underline decoration-primary decoration-2 underline-offset-4">
                                 {link.name}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                     <li className="flex items-center gap-4">
