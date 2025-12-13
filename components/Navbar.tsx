@@ -29,7 +29,7 @@ export default function Navbar() {
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                    ? 'bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-black/5 dark:border-white/10 py-4 shadow-sm dark:shadow-none'
+                    ? 'bg-white/10 dark:bg-black/60 backdrop-blur-md border-b border-black/5 dark:border-white/10 py-4 shadow-sm dark:shadow-none'
                     : 'bg-transparent py-6'
                 }`}
         >
@@ -39,16 +39,11 @@ export default function Navbar() {
                 <ul className="hidden md:flex items-center gap-8">
                     {links.map((link) => (
                         <li key={link.name}>
-                            <a href={link.href} className="text-sm font-medium text-gray-700 dark:text-gray-800 hover:text-primary dark:hover:text-white transition-colors hover:underline decoration-primary decoration-2 underline-offset-4">
+                            <a href={link.href} className="text-sm font-medium text-primary dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors hover:underline decoration-primary decoration-2 underline-offset-4">
                                 {link.name}
                             </a>
                         </li>
                     ))}
-                    <li>
-                        <a href="#contact" className="px-5 py-2 rounded-full border border-primary/50 text-primary hover:bg-primary hover:text-white transition-all">
-                            File Hire
-                        </a>
-                    </li>
                     <li className="flex items-center gap-4">
                         <ThemeToggle />
                     </li>
