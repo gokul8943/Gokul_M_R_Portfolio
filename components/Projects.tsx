@@ -2,33 +2,36 @@
 
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import Image from 'next/image';
+import aiInterview from '@/assets/interview.png';
+import aiImageGen from '@/assets/ai-image-gen.png';
+import realEstate from '@/assets/real-estate.png';
 
 export default function Projects() {
     const projects = [
         {
-            title: "Ai interview platform",
-            desc: "A comprehensive dashboard for managing online stores, orders, and analytics.",
+            title: "AI Interview Platform",
+            desc: "A comprehensive AI-powered dashboard for conducting automated technical interviews. Features include real-time candidate scoring, automated behavioral analysis, and detailed performance metrics to streamline the hiring process.",
             tags: ["React.js", "Node.js", "Express.js", "TypeScript", "Tailwind", "Prisma"],
             github: "#",
             demo: "#",
-            // placeholder color instead of real image for now
-            color: "from-blue-500 to-cyan-500"
+            image: aiInterview
         },
         {
-            title: "Ai image generation",
-            desc: "Real-time social platform with chat, notifications, and post sharing features.",
+            title: "AI Image Generation",
+            desc: "A creative studio application leveraging stable diffusion models. Users can generate high-fidelity artwork from text prompts, explore a community gallery, and fine-tune generation parameters in real-time.",
             tags: ["React.js", "Node.js", "Socket.io", "MongoDB"],
             github: "#",
             demo: "#",
-            color: "from-purple-500 to-pink-500"
+            image: aiImageGen
         },
         {
-            title: "Real estate platform",
-            desc: "Collaborative project management tool with Kanban boards and team chat.",
+            title: "Real Estate Platform",
+            desc: "A modern property listing marketplace connecting buyers and sellers. Includes interactive map search, virtual tours, mortgage calculator, and real-time appointment scheduling features.",
             tags: ["Vue.js", "Firebase", "Pinia"],
             github: "#",
             demo: "#",
-            color: "from-orange-500 to-red-500"
+            image: realEstate
         }
     ];
 
@@ -55,12 +58,19 @@ export default function Projects() {
                             transition={{ delay: idx * 0.1 }}
                             className="group rounded-2xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 overflow-hidden hover:border-primary/50 transition-all"
                         >
-                            {/* Image Placeholder */}
-                            <div className={`h-48 w-full bg-gradient-to-br ${project.color} opacity-80 group-hover:scale-105 transition-transform duration-500`} />
+                            <div className="relative h-68 w-full overflow-hidden">
+                                <Image
+                                    src={project.image}
+                                    alt={project.title}
+                                    fill
+                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
+                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
+                            </div>
 
                             <div className="p-6">
                                 <h3 className="text-2xl font-bold mb-2 text-gray-100 dark:text-white group-hover:text-white transition-colors">{project.title}</h3>
-                                <p className="text-gray-600 dark:text-gray-400 mb-4 line-clamp-3">{project.desc}</p>
+                                <p className="text-gray-600 dark:text-gray-400 mb-4 line-clamp-3 text-sm leading-relaxed">{project.desc}</p>
 
                                 <div className="flex flex-wrap gap-2 mb-6">
                                     {project.tags.map((tag, tagIdx) => (
