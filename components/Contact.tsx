@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaWhatsapp, FaPaperPlane } from 'react-icons/fa';
+import { FaEnvelope, FaPaperPlane } from 'react-icons/fa';
 
 export default function Contact() {
     return (
@@ -41,17 +41,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <span className="block text-sm text-gray-400">Email Me</span>
-                                    <span className="font-medium">contact@gokul.dev</span>
-                                </div>
-                            </a>
-
-                            <a href="https://wa.me/1234567890" className="flex items-center gap-4 p-4 rounded-xl glass-card hover:bg-white/5 transition-colors group">
-                                <div className="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-500 group-hover:scale-110 transition-transform">
-                                    <FaWhatsapp />
-                                </div>
-                                <div>
-                                    <span className="block text-sm text-gray-400">Chat on WhatsApp</span>
-                                    <span className="font-medium">+91 123 456 7890</span>
+                                    <span className="font-medium">gokulmr441@gmail.com</span>
                                 </div>
                             </a>
                         </div>

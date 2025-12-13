@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 import Image from 'next/image';
-import profileImage from '../assets/gokul mr sketch photo.png'
+import profileImage from '../assets/PortfolioPicture.png'
 
 export default function Hero() {
     return (
@@ -40,14 +40,14 @@ export default function Hero() {
                     </p>
 
                     <div className="flex flex-wrap gap-4 pt-4">
-                        <motion.a
+                        {/* <motion.a
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             href="#contact"
                             className="px-8 py-3 bg-gradient-to-r from-primary to-secondary rounded-full font-bold text-white shadow-lg shadow-purple-500/30"
                         >
                             Hire Me
-                        </motion.a>
+                        </motion.a> */}
                         <motion.a
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
