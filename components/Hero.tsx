@@ -20,7 +20,7 @@ export default function Hero() {
                     transition={{ duration: 0.8 }}
                     className="relative order-first lg:order-last"
                 >
-                    <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-full lg:aspect-square max-w-md mx-auto">
+                    <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-full lg:h-auto lg:aspect-square max-w-md mx-auto">
                         {/* Decorative circles */}
                         <div className="absolute inset-0 border-2 border-white/10 rounded-full animate-[spin_10s_linear_infinite]" />
                         <div className="absolute inset-4 border border-accent/20 rounded-full animate-[spin_15s_linear_infinite_reverse]" />
