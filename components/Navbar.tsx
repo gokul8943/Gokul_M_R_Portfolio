@@ -2,8 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { useState, useEffect } from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
 import { ThemeToggle } from "./ThemeToggle";
 
 export default function Navbar() {

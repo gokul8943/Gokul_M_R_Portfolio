@@ -12,25 +12,25 @@ export default function Projects() {
         {
             title: "AI Interview Platform",
             desc: "A comprehensive AI-powered dashboard for conducting automated technical interviews. Features include real-time candidate scoring, automated behavioral analysis, and detailed performance metrics to streamline the hiring process.",
-            tags: ["React.js", "Node.js", "Express.js", "TypeScript", "Tailwind", "Prisma"],
-            github: "#",
-            demo: "#",
+            tags: ["React.js", "Node.js", "Express.js", "TypeScript", "Tailwind"],
+            github: "https://github.com/gokul8943/Ai-interview-prep.git",
+            demo: "https://intelliprep-kw3t.onrender.com",
             image: aiInterview
         },
         {
             title: "AI Image Generation",
             desc: "A creative studio application leveraging stable diffusion models. Users can generate high-fidelity artwork from text prompts, explore a community gallery, and fine-tune generation parameters in real-time.",
-            tags: ["React.js", "Node.js", "Socket.io", "MongoDB"],
-            github: "#",
-            demo: "#",
+            tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Redux"],
+            github: "https://github.com/gokul8943/Imagify.git",
+            // demo: "#",
             image: aiImageGen
         },
         {
             title: "Real Estate Platform",
             desc: "A modern property listing marketplace connecting buyers and sellers. Includes interactive map search, virtual tours, mortgage calculator, and real-time appointment scheduling features.",
-            tags: ["Vue.js", "Firebase", "Pinia"],
-            github: "#",
-            demo: "#",
+            tags: ["React.js", "Node.js", "Socket.io", "MongoDB"],
+            github: "https://github.com/gokul8943/RealEstate.git",
+            // demo: "#",
             image: realEstate
         }
     ];
