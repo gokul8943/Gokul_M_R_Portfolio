@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import Image from 'next/image';
+import profileImage from '../assets/gokul mr sketch photo.png'
 
 export default function Hero() {
     return (
@@ -77,9 +79,13 @@ export default function Hero() {
                         <div className="absolute inset-4 border border-accent/20 rounded-full animate-[spin_15s_linear_infinite_reverse]" />
 
                         {/* Profile Place holder */}
-                        <div className="absolute inset-8 rounded-full overflow-hidden glass-card flex items-center justify-center bg-black/20">
-                            <span className="text-gray-600">Your Photo Here</span>
-                            {/* <img src="/path/to/profile.jpg" alt="Profile" className="w-full h-full object-cover" /> */}
+                        <div className="absolute inset-8 rounded-full overflow-hidden glass-card bg-black/20">
+                            <Image
+                                src={profileImage}
+                                alt="Profile"
+                                className="w-full h-full object-cover"
+                                priority
+                            />
                         </div>
                     </div>
                 </motion.div>
